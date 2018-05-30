@@ -12,6 +12,6 @@ Routing/OAuth/API -> Gin or Iris or Buffalo
 ORM -> Gorm
  - https://github.com/jinzhu/gorm
 
-AdminPanel -> Gor
+AdminPanel -> Qor
  - https://github.com/qor/admin
 
