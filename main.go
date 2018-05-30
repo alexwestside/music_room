@@ -1,17 +1,20 @@
 package main
 
 import (
+	"github.com/music_room/config"
 	"github.com/gin-gonic/gin"
-	"net/http"
 	"github.com/music_room/adminpanel"
+	"net/http"
 )
 
 func main() {
+	config.Load()
+
 	server := gin.Default()
 
-	adminPanel := adminpanel.New()
+	mux := adminpanel.New()
 
-
+	server.GET("/admin/", gin.WrapH(mux))
 
 	v1 := server.Group("/v1")
 	{
@@ -21,8 +24,6 @@ func main() {
 
 			c.String(http.StatusOK, "Hello %s %s", firstname, lastname)
 		})
-		v1.GET("/admin", gin.WrapH(adminPanel))
-
 	}
 
 	server.Run("localhost:8888")

@@ -27,7 +27,9 @@ func New() *http.ServeMux {
 	//Admin.AddResource(&User{})
 	//Admin.AddResource(&Product{})
 
-	Admin := admin.New()
+	Admin := admin.New(&admin.AdminConfig{SiteName: "Qor Example"})
+
+
 	mux := http.NewServeMux()
 	Admin.MountTo("/admin", mux)
 

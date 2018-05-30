@@ -1,0 +1,4 @@
+db:
+  adapter: sqlite
+  name: test
+  user: root
