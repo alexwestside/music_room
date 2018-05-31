@@ -15,3 +15,12 @@ ORM -> Gorm
 AdminPanel -> Qor
  - https://github.com/qor/admin
 
+
+BUILD:
+    1. Install Golang, Dep, Docker
+    2. sudo sh build.sh
+
+
+AVAILABLE routs:
+    http://localhost:8080/v1/welcome
+

@@ -1,31 +1,50 @@
 package main
 
 import (
-	"github.com/music_room/config"
-	"github.com/gin-gonic/gin"
-	"github.com/music_room/adminpanel"
-	"net/http"
+	"github.com/kataras/iris"
 )
 
 func main() {
-	config.Load()
+	app := iris.New()
+	app.Logger().SetLevel("debug")
 
-	server := gin.Default()
 
-	mux := adminpanel.New()
-
-	server.GET("/admin/", gin.WrapH(mux))
-
-	v1 := server.Group("/v1")
-	{
-		v1.GET("/welcome", func(c *gin.Context) {
-			firstname := c.DefaultQuery("firstname", "Guest")
-			lastname := c.Query("lastname") // shortcut for c.Request.URL.Query().Get("lastname")
-
-			c.String(http.StatusOK, "Hello %s %s", firstname, lastname)
+	app.PartyFunc("/v1", func(r iris.Party) {
+		r.Get("/welcome", func(ctx iris.Context) {
+			ctx.Writef("Hello from Music-Room SERVER")
 		})
-	}
+	})
 
-	server.Run("localhost:8888")
+	app.Run(
+		// Start the web server at localhost:80
+		iris.Addr(":8080"),
+		// disables updates:
+		iris.WithoutVersionChecker,
+		// skip err server closed when CTRL/CMD+C pressed:
+		iris.WithoutServerError(iris.ErrServerClosed),
+		// enables faster json serialization and more:
+		iris.WithOptimizations,
+	)
+
+
+	//config.Load()
+	//
+	//server := gin.Default()
+	//
+	//mux := adminpanel.New()
+	//
+	//server.GET("/admin/", gin.WrapH(mux))
+	//
+	//v1 := server.Group("/v1")
+	//{
+	//	v1.GET("/welcome", func(c *gin.Context) {
+	//		firstname := c.DefaultQuery("firstname", "Guest")
+	//		lastname := c.Query("lastname") // shortcut for c.Request.URL.Query().Get("lastname")
+	//
+	//		c.String(http.StatusOK, "Hello %s %s", firstname, lastname)
+	//	})
+	//}
+	//
+	//server.Run("localhost:8888")
 
 }
