@@ -17,10 +17,12 @@ AdminPanel -> Qor
 
 
 BUILD:
-    1. Install Golang, Dep, Docker
-    2. sudo sh build.sh
+    - Install Golang, Dep, Docker
+    - sudo sh build.sh
 
 
 AVAILABLE routs:
-    http://localhost:8080/v1/welcome
+    - http://localhost:8080/v1/welcome
+    - http://localhost:9000/admin - very-very-very begin admin_panel
+
 

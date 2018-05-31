@@ -2,9 +2,13 @@ package main
 
 import (
 	"github.com/kataras/iris"
+	"github.com/music_room/adminpanel"
 )
 
 func main() {
+
+	go adminpanel.Run()
+
 	app := iris.New()
 	app.Logger().SetLevel("debug")
 
@@ -33,7 +37,7 @@ func main() {
 	//
 	//mux := adminpanel.New()
 	//
-	//server.GET("/admin/", gin.WrapH(mux))
+	//server.GET("/adminpanel/", gin.WrapH(mux))
 	//
 	//v1 := server.Group("/v1")
 	//{

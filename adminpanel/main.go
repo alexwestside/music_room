@@ -1,9 +1,12 @@
 package adminpanel
 
 import (
-	"github.com/jinzhu/gorm"
+	"fmt"
 	"net/http"
+	"github.com/jinzhu/gorm"
+	_ "github.com/mattn/go-sqlite3"
 	"github.com/qor/admin"
+	"github.com/qor/qor"
 )
 
 // Create a GORM-backend model
@@ -19,19 +22,23 @@ type Product struct {
 	Description string
 }
 
-func New() *http.ServeMux {
-	//DB, _ := gorm.Open("sqlite3", "demo.db")
-	//DB.AutoMigrate(&User{}, &Product{})
-	//
-	//Admin := admin.New(&admin.AdminConfig{DB: DB})
-	//Admin.AddResource(&User{})
-	//Admin.AddResource(&Product{})
+func Run() {
+	DB, _ := gorm.Open("sqlite3", "demo.db")
+	DB.AutoMigrate(&User{}, &Product{})
 
-	Admin := admin.New(&admin.AdminConfig{SiteName: "Qor Example"})
+	// Initalize
+	Admin := admin.New(&qor.Config{DB: DB})
 
+	// Allow to use Admin to manage User, Product
+	Admin.AddResource(&User{})
+	Admin.AddResource(&Product{})
 
+	// initalize an HTTP request multiplexer
 	mux := http.NewServeMux()
+
+	// Mount adminpanel interface to mux
 	Admin.MountTo("/admin", mux)
 
-	return mux
+	fmt.Println("Listening on: 9000")
+	http.ListenAndServe(":9000", mux)
 }
