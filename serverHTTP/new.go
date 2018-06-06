@@ -5,13 +5,14 @@ import (
 	"github.com/jinzhu/gorm"
 	"github.com/qor/admin"
 	"github.com/qor/qor"
-	"github.com/music_room/db"
+	"github.com/music_room/db/psql"
 )
 
 type TypeServerHTTP struct {
-	DB      *gorm.DB
-	App     *iris.Application
-	Admin 	*admin.Admin
+	PSQL  *gorm.DB
+	Redis *gorm.DB
+	App   *iris.Application
+	Admin *admin.Admin
 }
 
 var Server *TypeServerHTTP
@@ -19,8 +20,9 @@ var Server *TypeServerHTTP
 func New(){
 	Server = &TypeServerHTTP{}
 
-	Server.DB = db.New()
-	Server.Admin = admin.New(&qor.Config{DB: Server.DB})
+	Server.PSQL = psql.New()
+	Server.Redis = redis
+	Server.Admin = admin.New(&qor.Config{DB: Server.PSQL})
 	Server.App = iris.New()
 	Server.App.Logger().SetLevel("debug")
 

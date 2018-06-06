@@ -1,4 +1,4 @@
-package db
+package psql
 
 import (
 	"github.com/jinzhu/gorm"
