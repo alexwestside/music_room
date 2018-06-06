@@ -5,8 +5,7 @@ import (
 	"net/http"
 	"github.com/jinzhu/gorm"
 	_ "github.com/mattn/go-sqlite3"
-	"github.com/qor/admin"
-	"github.com/qor/qor"
+	"github.com/music_room/serverHTTP"
 )
 
 // Create a GORM-backend model
@@ -22,22 +21,24 @@ type Product struct {
 	Description string
 }
 
+
+
 func Run() {
-	DB, _ := gorm.Open("sqlite3", "demo.db")
-	DB.AutoMigrate(&User{}, &Product{})
+	//DB, _ := gorm.Open("sqlite3", "demo.db")
+	//DB.AutoMigrate(&User{}, &Product{})
 
 	// Initalize
-	Admin := admin.New(&qor.Config{DB: DB})
+	//Admin := admin.New(&qor.Config{DB: DB})
 
 	// Allow to use Admin to manage User, Product
-	Admin.AddResource(&User{})
-	Admin.AddResource(&Product{})
+	serverHTTP.Server.Admin.AddResource(&User{})
+	serverHTTP.Server.Admin.AddResource(&Product{})
 
 	// initalize an HTTP request multiplexer
 	mux := http.NewServeMux()
 
 	// Mount adminpanel interface to mux
-	Admin.MountTo("/admin", mux)
+	serverHTTP.Server.Admin.MountTo("/admin", mux)
 
 	fmt.Println("Listening on: 9000")
 	http.ListenAndServe(":9000", mux)

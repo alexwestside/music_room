@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"os"
 	"flag"
+	"github.com/taasfund/crunchbase/models"
+	_ "github.com/jinzhu/gorm/dialects/postgres"
 )
 
 type argv struct {
@@ -31,20 +33,21 @@ func parseArgs() *argv {
 }
 
 
-func migrate(connection *gorm.DB) {
-	fmt.Println("Migrate")
+func makeMigrations(connection *gorm.DB) {
+	migrate := os.Getenv("MIGRATE")
 
-	//TODO: ADD CONSTRAINTS
-	//connection.AutoMigrate(&models.Project{}, &models.Investment{}, &models.Member{})
-	//
-	//fmt.Println("Migrations done")
+	if migrate == "1" {
+		fmt.Println("Migrate")
+
+		//TODO: ADD CONSTRAINTS
+		connection.AutoMigrate(&models.Project{}, &models.Investment{}, &models.Member{})
+
+		fmt.Println("Migrations done")
+	}
 }
 
 
 func New() *gorm.DB {
-
-	flags := parseArgs()
-
 	host := os.Getenv("DBHOST")
 	port := os.Getenv("DBPORT")
 	db := os.Getenv("DB")
@@ -59,9 +62,7 @@ func New() *gorm.DB {
 		panic(err)
 	}
 
-	if flags.migrate == true {
-		migrate(connection)
-	}
+	makeMigrations(connection)
 
 	defer connection.Close()
 

@@ -8,31 +8,24 @@ import (
 	"github.com/music_room/db"
 )
 
-type ServerHTTP struct {
+type TypeServerHTTP struct {
 	DB      *gorm.DB
 	App     *iris.Application
 	Admin 	*admin.Admin
-
-	Address string
 }
 
-//
-//type HTTPHandler struct {
-//	App     *iris.Application
-//	Address string
-//	//db      *gorm.DB
-//}
+var Server *TypeServerHTTP
 
+func New(){
+	Server = &TypeServerHTTP{}
 
-func New() *ServerHTTP {
-	return &ServerHTTP{
-		DB:    db.New(),
-		App:   iris.New(),
-		Admin: admin.New(&qor.Config{DB: DB}),
-	}
+	Server.DB = db.New()
+	Server.Admin = admin.New(&qor.Config{DB: Server.DB})
+	Server.App = iris.New()
+	Server.App.Logger().SetLevel("debug")
 
+}
 
-	//app := iris.New()
-	//app.Logger().SetLevel("debug")
-	//return app
+func (s TypeServerHTTP) F() {
+
 }
