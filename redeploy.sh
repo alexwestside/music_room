@@ -1,18 +1,25 @@
 #!/bin/sh
 
-MIGRATE='1'
+export MIGRATE='1'
 
-PGHOST='postgres'
-PGPORT='5432'
-PGNAME='music_room'
-PGUSER='alex'
-PGPASS='12345'
+export PGHOST='postgres'
+export PGPORT='5432'
+export PGNAME='music_room'
+export PGUSER='alex'
+export PGPASS='12345'
 
-RDSHOST='rds'
-RDSPORT='6379'
+export RDSHOST='rds'
+export RDSPORT='6379'
 
-git pull origin server
+#git pull origin server
 
+
+# Delete
 docker-compose stop
 docker-compose rm -f
-docker-compose up -d -e PGHOST -e PGPORT -e PGNAME -e PGUSER -e PGPASS -e RDSHOST -e RDSPORT -e MIGRATE
+#docker network rm mr_network
+
+# Create
+#docker network create my_app
+docker-compose up -d
+docker-compose logs

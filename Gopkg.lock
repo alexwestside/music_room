@@ -46,6 +46,21 @@
   revision = "e7cf9ea5ca9c574f3fd5f83f7eed4a6162a67dea"
 
 [[projects]]
+  name = "github.com/go-redis/redis"
+  packages = [
+    ".",
+    "internal",
+    "internal/consistenthash",
+    "internal/hashtag",
+    "internal/pool",
+    "internal/proto",
+    "internal/singleflight",
+    "internal/util"
+  ]
+  revision = "83fb42932f6145ce52df09860384a4653d2d332a"
+  version = "v6.12.0"
+
+[[projects]]
   branch = "master"
   name = "github.com/hashicorp/go-version"
   packages = ["."]
@@ -65,7 +80,10 @@
 
 [[projects]]
   name = "github.com/jinzhu/gorm"
-  packages = ["."]
+  packages = [
+    ".",
+    "dialects/postgres"
+  ]
   revision = "6ed508ec6a4ecb3531899a69cbc746ccf65a4166"
   version = "v1.9.1"
 
@@ -181,6 +199,16 @@
   version = "v0.1.0"
 
 [[projects]]
+  branch = "master"
+  name = "github.com/lib/pq"
+  packages = [
+    ".",
+    "hstore",
+    "oid"
+  ]
+  revision = "90697d60dd844d5ef6ff15135d0203f65d2f53b8"
+
+[[projects]]
   name = "github.com/mattn/go-colorable"
   packages = ["."]
   revision = "167de6bfdfba052fa6b2d3664c8f5272e23c9072"
@@ -191,6 +219,12 @@
   packages = ["."]
   revision = "0360b2af4f38e8d38c7fce2a9f4e702702d73a39"
   version = "v0.0.3"
+
+[[projects]]
+  name = "github.com/mattn/go-sqlite3"
+  packages = ["."]
+  revision = "323a32be5a2421b8c7087225079c6c900ec397cd"
+  version = "v1.7.0"
 
 [[projects]]
   branch = "master"
@@ -325,6 +359,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "f88fd34fefdbeeb7694e479742ab8114dbbaeb6fc4820ff5e89a91f3396095fe"
+  inputs-digest = "5ea50dd39756b8fa61280587599ed1205c8bfd793413159321732b4e38c643b5"
   solver-name = "gps-cdcl"
   solver-version = 1

@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"os"
 	"flag"
-	"github.com/taasfund/crunchbase/models"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 )
 
@@ -40,7 +39,7 @@ func makeMigrations(connection *gorm.DB) {
 		fmt.Println("Migrate")
 
 		//TODO: ADD CONSTRAINTS
-		connection.AutoMigrate(&models.Project{}, &models.Investment{}, &models.Member{})
+		connection.AutoMigrate()
 
 		fmt.Println("Migrations done")
 	}

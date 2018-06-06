@@ -3,17 +3,14 @@ version: "2"
 services:
 
   go_server:
-    image: golang:1.10.1
+    build: .
     container_name: go_server
-    volumes:
-        - ./go/src/github/music_room:/go/src/github/music_room
-    working_dir: /go/src/github/music_room
-    command: dep ensure && go build server && ./server
     ports:
-        - "80:8000"
+        - "8000:8000"
+        - "9000:9000"
     environment:
-        MIGRATE: "$MIGRATE"
-    depends_on:
+        MIGRATE: ${MIGRATE}
+    links:
         - postgres
         - redis
 
@@ -23,25 +20,24 @@ services:
     restart: always
     volumes:
         - local_postgres:/var/lib/postgresql/data
-    ports:
-        - "5432:5432"
     environment:
-        PGHOST: "$PGHOST"
-        PGPORT: "$PGPORT"
-        PGNAME: "$PGNAME"
-        PGUSER: "$PGUSER"
-        PGPASS: "$PGPASS"
+        PGHOST: ${PGHOST}
+        PGPORT: ${PGPORT}
+        PGNAME: ${PGNAME}
+        PGUSER: ${PGUSER}
+        PGPASS: ${PGPASS}
 
   redis:
-    image: rds:3.0-alpine
-    container_name: rds
+    image: redis:3.0-alpine
+    container_name: redis
     restart: always
-    ports:
-        - "6379:6379"
     volumes:
         - /tmp
-    command: rds-server --appendonly yes
+    command: redis-server --appendonly yes
     environment:
-        RDSHOST: "$RDSHOST"
-        RDSPORT: "$RDSPORT"
+        RDSHOST: ${RDSHOST}
+        RDSPORT: ${RDSPORT}
+
+volumes:
+  local_postgres:
 
