@@ -8,5 +8,14 @@
       <auth-required>false</auth-required>
       <introspection-schemas>*:main</introspection-schemas>
     </data-source>
+    <data-source name="music_room@localhost" uuid="2458c4b1-d13f-4317-b3b2-d76859115b38">
+      <database-info product="PostgreSQL" version="9.6.8" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>alex</user-name>
+      <introspection-schemas>music_room:public</introspection-schemas>
+    </data-source>
   </component>
 </project>

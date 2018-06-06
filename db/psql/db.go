@@ -64,7 +64,7 @@ func New() *gorm.DB {
 
 	makeMigrations(connection)
 
-	defer connection.Close()
+	//defer connection.Close()
 
 	return connection
 }

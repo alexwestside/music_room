@@ -1,11 +1,15 @@
 #!/bin/sh
 
+MIGRATE='1'
+
 PGHOST='postgres'
 PGPORT='5432'
 PGNAME='music-room'
 PGUSER='postgres'
 PGPASS='12345'
-MIGRATE='1'
+
+RDSHOST='rds'
+RDSPORT='6379'
 
 git pull origin server
 

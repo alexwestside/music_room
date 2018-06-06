@@ -22,10 +22,8 @@ type Product struct {
 }
 
 
-
 func Run() {
-	//DB, _ := gorm.Open("sqlite3", "demo.db")
-	//DB.AutoMigrate(&User{}, &Product{})
+	serverHTTP.Server.PSQL.AutoMigrate(&User{}, &Product{})
 
 	// Initalize
 	//Admin := admin.New(&qor.Config{DB: DB})
@@ -40,6 +38,6 @@ func Run() {
 	// Mount adminpanel interface to mux
 	serverHTTP.Server.Admin.MountTo("/admin", mux)
 
-	fmt.Println("Listening on: 9000")
+	fmt.Println("AdminPanel Listening on: http://localhost:9000/admin")
 	http.ListenAndServe(":9000", mux)
 }
