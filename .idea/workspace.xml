@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77e8a602-449f-4d35-88aa-8414eb05a378" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanel/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/adminpanel/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/main_go" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main_go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/psql/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/db/psql/db.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/redis/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/db/rds/db.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redeploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/redeploy.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serverHTTP/new.go" beforeDir="false" afterPath="$PROJECT_DIR$/serverHTTP/new.go" afterDir="false" />
-    </list>
+    <list default="true" id="77e8a602-449f-4d35-88aa-8414eb05a378" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,8 +59,8 @@
       <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+            <state relative-caret-position="225">
+              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
               <folding>
                 <element signature="e#14#117#0" expanded="true" />
               </folding>
@@ -82,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/application/main.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+              <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -91,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/db/psql/db.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="422">
-              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+              <caret line="67" selection-start-line="67" selection-end-line="67" />
               <folding>
                 <element signature="e#14#158#0" expanded="true" />
               </folding>
@@ -112,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/db/rds/db.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="437">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="e#15#103#0" expanded="true" />
               </folding>
@@ -123,19 +113,19 @@
       <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/adminpanel/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="42" column="69" selection-start-line="42" selection-start-column="69" selection-end-line="42" selection-end-column="69" />
+            <state relative-caret-position="450">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/api/api.go">
+      <file leaf-file-name="v1.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/api/v1/v1.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="30">
+              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding>
-                <element signature="e#13#114#0" expanded="true" />
+                <element signature="e#12#49#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -244,6 +234,11 @@
               <item name="music_room" type="b2602c69:ProjectViewProjectNode" />
               <item name="music_room" type="462c0819:PsiDirectoryNode" />
               <item name="adminpanel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="music_room" type="b2602c69:ProjectViewProjectNode" />
+              <item name="music_room" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="music_room" type="b2602c69:ProjectViewProjectNode" />
@@ -468,6 +463,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding>
+            <element signature="e#12#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -701,23 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/v1/v1.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/api.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <element signature="e#13#114#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../kataras/iris/sessions/sessiondb/redis/database.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -749,23 +730,6 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2458c4b1-d13f-4317-b3b2-d76859115b38/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding>
-            <element signature="e#14#117#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/serverHTTP/new.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -776,7 +740,7 @@
     <entry file="file://$PROJECT_DIR$/db/rds/db.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="e#15#103#0" expanded="true" />
           </folding>
@@ -786,17 +750,54 @@
     <entry file="file://$PROJECT_DIR$/db/psql/db.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="422">
-          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
           <folding>
             <element signature="e#14#158#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/api/v1/v1.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#12#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding>
+            <element signature="e#14#117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/api/api.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
+          <folding>
+            <element signature="e#13#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/adminpanel/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="42" column="69" selection-start-line="42" selection-start-column="69" selection-end-line="42" selection-end-column="69" />
+        <state relative-caret-position="450">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
