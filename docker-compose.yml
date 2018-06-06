@@ -1,0 +1,30 @@
+
+postgres:
+  image: postgres:9.1
+  volumes:
+    - local_postgres:/var/lib/postgresql/data
+  ports:
+   - "5432:5432"
+  environment:
+    PGHOST: "$PGHOST"
+    PGPORT: "$PGPORT"
+    PGNAME: "$PGNAME"
+    PGUSER: "$PGUSER"
+    PGPASS: "$PGPASS"
+
+redis:
+  image: redis:latest
+  command: redis-server --appendonly yes
+
+music_room:
+  image: username/image:latest
+  command: python main.py
+  environment:
+    MIGRATE: "$MIGRATE"
+  ports:
+   - "80:8000"
+  volumes:
+   - .:/music_room_volume
+  links:
+   - redis
+   - postgres

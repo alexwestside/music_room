@@ -48,14 +48,14 @@ func makeMigrations(connection *gorm.DB) {
 
 
 func New() *gorm.DB {
-	host := os.Getenv("DBHOST")
-	port := os.Getenv("DBPORT")
-	db := os.Getenv("DB")
-	login := os.Getenv("DBUSER")
-	pass := os.Getenv("DBPASS")
+	host := os.Getenv("PGHOST")
+	port := os.Getenv("PGPORT")
+	pgname := os.Getenv("PGNAME")
+	login := os.Getenv("PGUSER")
+	pass := os.Getenv("PGPASS")
 
 	connStr := fmt.Sprintf("sslmode=disable host=%s port=%s dbname=%s user=%s password=%s",
-		host, port, db, login, pass)
+		host, port, pgname, login, pass)
 
 	connection, err := gorm.Open("postgres", connStr)
 	if err != nil {
