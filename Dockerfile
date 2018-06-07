@@ -1,5 +1,15 @@
 FROM golang:1.10.1
 
+#ENV MIGRATE=${MIGRATE}
+#ENV PGHOST=$PGHOST}
+#ENV PGPORT=$PGPORT}
+#ENV PGNAME=$PGNAME}
+#ENV PGUSER=$PGUSER}
+#ENV PGPASS=$PGPASS}
+#ENV RDSHOST=$RDSHOST}
+#ENV RDSPORT=$RDSPORT
+
+
 # Download and install the latest release of dep
 ADD https://github.com/golang/dep/releases/download/v0.4.1/dep-linux-amd64 /usr/bin/dep
 RUN chmod +x /usr/bin/dep
@@ -15,7 +25,7 @@ RUN dep ensure --vendor-only
 COPY . ./
 
 # Build
-RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix nocgo -o bin/server .
+#RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix nocgo -o bin/server .
 
 # Run
-CMD ./bin/server
+#CMD ./bin/server

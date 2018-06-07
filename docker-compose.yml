@@ -5,39 +5,43 @@ services:
   go_server:
     build: .
     container_name: go_server
+#    command: >
+#        /bin/bash -c "sleep 30;"
+    command: go run main.go
     ports:
         - "8000:8000"
         - "9000:9000"
     environment:
-        MIGRATE: ${MIGRATE}
+        - MIGRATE=${MIGRATE}
+        - PGHOST=${PGHOST}
+        - PGPORT=${PGPORT}
+        - PGNAME=${PGNAME}
+        - PGUSER=${PGUSER}
+        - PGPASS=${PGPASS}
+        - RDSHOST=${RDSHOST}
+        - RDSPORT=${RDSPORT}
+        - RDSNAME=${RDSNAME}
+    depends_on:
+        - redis
+        - postgres
     links:
         - postgres
         - redis
 
   postgres:
-    image: postgres:9.5-alpine
+    image: postgres
     container_name: postgres
     restart: always
-    volumes:
-        - local_postgres:/var/lib/postgresql/data
     environment:
-        PGHOST: ${PGHOST}
-        PGPORT: ${PGPORT}
-        PGNAME: ${PGNAME}
-        PGUSER: ${PGUSER}
-        PGPASS: ${PGPASS}
+        - POSTGRES_USER=${PGUSER}
+        - POSTGRES_PASSWORD=${PGPASS}
+        - POSTGRES_DB=${PGNAME}
 
   redis:
     image: redis:3.0-alpine
     container_name: redis
     restart: always
-    volumes:
-        - /tmp
     command: redis-server --appendonly yes
     environment:
-        RDSHOST: ${RDSHOST}
-        RDSPORT: ${RDSPORT}
-
-volumes:
-  local_postgres:
+        - ALLOW_EMPTY_PASSWORD=yes
 

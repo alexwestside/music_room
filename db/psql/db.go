@@ -50,11 +50,11 @@ func New() *gorm.DB {
 	host := os.Getenv("PGHOST")
 	port := os.Getenv("PGPORT")
 	pgname := os.Getenv("PGNAME")
-	login := os.Getenv("PGUSER")
+	user := os.Getenv("PGUSER")
 	pass := os.Getenv("PGPASS")
 
 	connStr := fmt.Sprintf("sslmode=disable host=%s port=%s dbname=%s user=%s password=%s",
-		host, port, pgname, login, pass)
+		host, port, pgname, user, pass)
 
 	connection, err := gorm.Open("postgres", connStr)
 	if err != nil {
