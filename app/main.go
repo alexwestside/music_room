@@ -1,9 +1,9 @@
-package application
+package app
 
 import (
 	"github.com/kataras/iris"
 	"github.com/music_room/serverHTTP"
-	"github.com/music_room/application/api"
+	"github.com/music_room/app/api"
 )
 
 func Run() {

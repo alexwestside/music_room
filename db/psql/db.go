@@ -4,32 +4,8 @@ import (
 	"github.com/jinzhu/gorm"
 	"fmt"
 	"os"
-	"flag"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 )
-
-type argv struct {
-	host    string
-	port    string
-	migrate bool
-}
-
-func parseArgs() *argv {
-	var flags argv
-
-	helpHost := `Specify host`
-	flag.StringVar(&flags.host, "host", "0.0.0.0", helpHost)
-
-	helpPort := `Specify port to listen requests`
-	flag.StringVar(&flags.port, "port", "80", helpPort)
-
-	helpMigrate := `Migrate`
-	flag.BoolVar(&flags.migrate, "migrate", false, helpMigrate)
-
-	flag.Parse()
-
-	return &flags
-}
 
 
 func makeMigrations(connection *gorm.DB) {
@@ -62,8 +38,6 @@ func New() *gorm.DB {
 	}
 
 	makeMigrations(connection)
-
-	//defer connection.Close()
 
 	return connection
 }

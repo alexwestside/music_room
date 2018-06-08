@@ -1,9 +1,9 @@
 package api
 
 import (
-	"github.com/music_room/application/api/v1"
+	"github.com/music_room/app/api/v1"
 	"github.com/kataras/iris"
-	"github.com/music_room/application/api/v2"
+	"github.com/music_room/app/api/v2"
 	"github.com/music_room/serverHTTP"
 )
 

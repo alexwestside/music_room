@@ -27,9 +27,4 @@ func New(){
 	Server.Admin = admin.New(&qor.Config{DB: Server.PSQL})
 	Server.App = iris.New()
 	Server.App.Logger().SetLevel("debug")
-
-}
-
-func (s TypeServerHTTP) F() {
-
 }

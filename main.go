@@ -2,20 +2,17 @@ package main
 
 import (
 	"github.com/music_room/serverHTTP"
-	"github.com/music_room/adminpanel"
-	"github.com/music_room/application"
-	"time"
-	"fmt"
+	"github.com/music_room/adm"
+	"github.com/music_room/app"
 )
 
 
 func main() {
-	time.Sleep(time.Second * 35)
-	fmt.Println("Wait for PSQL...")
 
 	serverHTTP.New()
 
-	go adminpanel.Run()
+	go adm.Run()
 
-	application.Run()
+	app.Run()
+
 }
