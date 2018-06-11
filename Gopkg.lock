@@ -73,10 +73,10 @@
   revision = "ad9fb86c356f971f30319c40ddbdcf72129a2791"
 
 [[projects]]
-  branch = "master"
-  name = "github.com/jinzhu/configor"
-  packages = ["."]
-  revision = "ec34f328956f53dfbd06e9f5306e37e6943443c3"
+  name = "github.com/iris-contrib/middleware"
+  packages = ["secure"]
+  revision = "1060fbb0ce08a72c50c612e8e5bdc8076c28343d"
+  version = "v10"
 
 [[projects]]
   name = "github.com/jinzhu/gorm"
@@ -221,12 +221,6 @@
   version = "v0.0.3"
 
 [[projects]]
-  name = "github.com/mattn/go-sqlite3"
-  packages = ["."]
-  revision = "323a32be5a2421b8c7087225079c6c900ec397cd"
-  version = "v1.7.0"
-
-[[projects]]
   branch = "master"
   name = "github.com/mgutz/ansi"
   packages = ["."]
@@ -359,6 +353,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "5ea50dd39756b8fa61280587599ed1205c8bfd793413159321732b4e38c643b5"
+  inputs-digest = "403c5faf528fda5d068731d9fab86db3979203a300726ab316bff7b366ba803f"
   solver-name = "gps-cdcl"
   solver-version = 1

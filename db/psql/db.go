@@ -7,6 +7,14 @@ import (
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 )
 
+type TypePSQL struct {
+	PGhost string
+	PGport string
+	PGname string
+	PGuser string
+	PGpass string
+}
+
 
 func makeMigrations(connection *gorm.DB) {
 	migrate := os.Getenv("MIGRATE")
@@ -21,17 +29,9 @@ func makeMigrations(connection *gorm.DB) {
 	}
 }
 
-
-func New() *gorm.DB {
-	host := os.Getenv("PGHOST")
-	port := os.Getenv("PGPORT")
-	pgname := os.Getenv("PGNAME")
-	user := os.Getenv("PGUSER")
-	pass := os.Getenv("PGPASS")
-
+func (p *TypePSQL) NewConn() *gorm.DB  {
 	connStr := fmt.Sprintf("sslmode=disable host=%s port=%s dbname=%s user=%s password=%s",
-		host, port, pgname, user, pass)
-
+				p.PGhost, p.PGport, p.PGname, p.PGuser, p.PGpass)
 	connection, err := gorm.Open("postgres", connStr)
 	if err != nil {
 		panic(err)
@@ -41,3 +41,35 @@ func New() *gorm.DB {
 
 	return connection
 }
+
+
+func New() *TypePSQL {
+	return &TypePSQL{
+		os.Getenv("PGHOST"),
+		os.Getenv("PGPORT"),
+		os.Getenv("PGNAME"),
+		os.Getenv("PGUSER"),
+		os.Getenv("PGPASS"),
+	}
+}
+
+//
+//func New() *gorm.DB {
+//	host := os.Getenv("PGHOST")
+//	port := os.Getenv("PGPORT")
+//	pgname := os.Getenv("PGNAME")
+//	user := os.Getenv("PGUSER")
+//	pass := os.Getenv("PGPASS")
+//
+//	connStr := fmt.Sprintf("sslmode=disable host=%s port=%s dbname=%s user=%s password=%s",
+//		host, port, pgname, user, pass)
+//
+//	connection, err := gorm.Open("postgres", connStr)
+//	if err != nil {
+//		panic(err)
+//	}
+//
+//	makeMigrations(connection)
+//
+//	return connection
+//}

@@ -2,33 +2,40 @@ package rds
 
 import (
 	"os"
-	"fmt"
-	"github.com/go-redis/redis"
 	"strconv"
+	"github.com/go-redis/redis"
+	"fmt"
 )
 
-func New() *redis.Client {
-	rdshost := os.Getenv("RDSHOST")
-	rdsport := os.Getenv("RDSPORT")
-	rdsname := os.Getenv("RDSNAME")
+type TypeRedis struct {
+	RDShost string
+	RDSport string
+	RDSname string
+}
 
-	dbname, e := strconv.Atoi(rdsname)
-	if e != nil {
-		panic(e)
+func (r *TypeRedis) NewConn() *redis.Client {
+	dbname, err := strconv.Atoi(r.RDSname)
+	if err != nil {
+		panic(err)
 	}
-
 	connection := redis.NewClient(&redis.Options{
-		Addr:     fmt.Sprintf("%s:%s", rdshost, rdsport),
+		Addr:     fmt.Sprintf("%s:%s", r.RDShost, r.RDSport),
 		Password: "", // no password set
 		DB:       dbname,
 	})
 
-	_, err := connection.Ping().Result()
-	if err != nil {
-		panic(err)
+	_, errConn := connection.Ping().Result()
+	if errConn != nil {
+		panic(errConn)
 	}
 
-	//defer connection.Close()
-
 	return connection
+}
+
+func New() *TypeRedis {
+	return &TypeRedis{
+		os.Getenv("RDSHOST"),
+		os.Getenv("RDSPORT"),
+		os.Getenv("RDSNAME"),
+	}
 }
