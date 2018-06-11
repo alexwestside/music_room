@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/music_room/serverHTTP"
-	"github.com/music_room/adm"
 	"github.com/music_room/app"
+	"github.com/music_room/adm"
 )
 
 
@@ -11,7 +11,7 @@ func main() {
 
 	serverHTTP.New()
 
-	go adm.Run()
+	adm.Run()
 
 	app.Run()
 

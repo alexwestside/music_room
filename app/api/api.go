@@ -1,19 +1,22 @@
 package api
 
 import (
-	"github.com/music_room/app/api/v1"
 	"github.com/kataras/iris"
-	"github.com/music_room/app/api/v2"
 	"github.com/music_room/serverHTTP"
 )
 
+
 func Routing() {
 
-	serverHTTP.Server.App.PartyFunc("/v1", func(r iris.Party) {
-		v1.Routes(r)
+	serverHTTP.Server.App.Get("/welcome", func(ctx iris.Context) {
+		ctx.Writef("Hello from Music-Room SERVER")
 	})
 
-	serverHTTP.Server.App.PartyFunc("/v2", func(r iris.Party) {
-		v2.Routes(r)
+	serverHTTP.Server.App.PartyFunc("/room", func(r iris.Party) {
+		r.Get("/welcome", func(ctx iris.Context) {
+			ctx.Writef("Hello from ROOM")
+		})
 	})
+
+
 }

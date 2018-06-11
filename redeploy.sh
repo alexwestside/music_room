@@ -25,6 +25,6 @@ docker rmi $(docker images -a -q)
 #docker network rm mr_network
 
 # Create
-#docker network create my_app
-docker-compose up
+docker network create my_app
+docker-compose up --build
 docker-compose logs

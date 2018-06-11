@@ -3,9 +3,9 @@ package serverHTTP
 import (
 	"github.com/kataras/iris"
 	"github.com/qor/admin"
-	"github.com/qor/qor"
 	"github.com/music_room/db/psql"
 	"github.com/music_room/db/rds"
+	"github.com/qor/qor"
 )
 
 type TypeServerHTTP struct {

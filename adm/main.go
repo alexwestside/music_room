@@ -1,12 +1,9 @@
 package adm
 
 import (
-	"fmt"
 	"net/http"
 	"github.com/jinzhu/gorm"
 	"github.com/music_room/serverHTTP"
-	//"github.com/qor/qor"
-	//"github.com/qor/admin"
 )
 
 // Create a GORM-backend model
@@ -22,9 +19,8 @@ type Product struct {
 	Description string
 }
 
-
 func Run() {
-	//serverHTTP.Server.PSQL.AutoMigrate(&User{}, &Product{})
+	//server.PSQL.AutoMigrate(&User{}, &Product{})
 
 	// Allow to use Admin to manage User, Product
 	serverHTTP.Server.Admin.AddResource(&User{})
@@ -36,10 +32,13 @@ func Run() {
 	// Mount adm interface to mux
 	serverHTTP.Server.Admin.MountTo("/admin", mux)
 
-	fmt.Println("AdminPanel Listening on: http://localhost:9000/admin")
-	errServer := http.ListenAndServe(":9000", mux)
+	serverHTTP.Server.App.Get("/admin/*")
 
-	if errServer != nil {
-		panic(errServer)
-	}
+
+	//fmt.Println("AdminPanel Listening on: http://localhost:9000/admin")
+	//errServer := http.ListenAndServe(":9000", mux)
+
+	//if errServer != nil {
+	//	panic(errServer)
+	//}
 }

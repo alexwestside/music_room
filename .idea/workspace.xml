@@ -2,50 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77e8a602-449f-4d35-88aa-8414eb05a378" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/configs/iris.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gopkg.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gopkg.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gopkg.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Gopkg.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adm/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/adm/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/api.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/api.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/v1/v1.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/v2/v2.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/main_go" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main_go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/psql/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/db/psql/db.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/rds/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/db/rds/db.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redeploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/redeploy.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serverHTTP/new.go" beforeDir="false" afterPath="$PROJECT_DIR$/serverHTTP/new.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/configor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/configor/configor.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/configor/utils.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/configor/wercker.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/backup.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/callback.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/doc.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/error.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/sqlite3-binding.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/sqlite3-binding.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/sqlite3.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/sqlite3_context.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/sqlite3_fts5.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/sqlite3_go18.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/sqlite3_icu.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/sqlite3_json1.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/sqlite3_libsqlite3.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/sqlite3_load_extension.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/sqlite3_omit_load_extension.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/sqlite3_other.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/sqlite3_solaris.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/sqlite3_trace.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/sqlite3_type.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/sqlite3_vtable.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/sqlite3_windows.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/sqlite3ext.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-sqlite3/static_mock.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/taasfund/crunchbase/models/investment.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/taasfund/crunchbase/models/member.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/taasfund/crunchbase/models/project.go" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,6 +37,32 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="music_room@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="music_room@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="music_room@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="music_room: database" type="6d9b600a:PostgresImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="music_room@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="music_room: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="music_room@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="music_room: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
     </expand>
     <select />
   </component>
@@ -78,34 +71,10 @@
       <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="195">
+              <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
               <folding>
                 <element signature="e#14#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/serverHTTP/new.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-              <folding>
-                <element signature="e#20#223#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/rds/db.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-              <folding>
-                <element signature="e#13#40#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,20 +83,41 @@
       <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-360">
-              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state relative-caret-position="140">
+              <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/api/api.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding>
-                <element signature="e#21#135#0" expanded="true" />
+                <element signature="e#13#86#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
+      <file leaf-file-name="new.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/serverHTTP/new.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+              <folding>
+                <element signature="e#20#223#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/adm/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
+            <state relative-caret-position="140">
+              <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
               <folding>
                 <element signature="e#20#144#0" expanded="true" />
               </folding>
@@ -138,8 +128,8 @@
       <file leaf-file-name="db.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/psql/db.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+            <state relative-caret-position="195">
+              <caret line="31" column="26" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="26" />
               <folding>
                 <element signature="e#14#158#0" expanded="true" />
               </folding>
@@ -150,8 +140,8 @@
       <file leaf-file-name="redeploy.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/redeploy.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="9" selection-start-column="9" selection-end-column="9" />
+            <state relative-caret-position="435">
+              <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -178,6 +168,7 @@
     <findStrings>
       <find>Atoi</find>
       <find>sec</find>
+      <find>cr</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
@@ -222,17 +213,19 @@
         <option value="$PROJECT_DIR$/db/redis/db.go" />
         <option value="$PROJECT_DIR$/Gopkg.lock" />
         <option value="$PROJECT_DIR$/Dockerfile" />
-        <option value="$PROJECT_DIR$/redeploy.sh" />
         <option value="$PROJECT_DIR$/application/main.go" />
         <option value="$PROJECT_DIR$/adminpanel/main.go" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/configs/iris.yml" />
-        <option value="$PROJECT_DIR$/app/main.go" />
-        <option value="$PROJECT_DIR$/main.go" />
-        <option value="$PROJECT_DIR$/db/psql/db.go" />
-        <option value="$PROJECT_DIR$/serverHTTP/new.go" />
-        <option value="$PROJECT_DIR$/adm/main.go" />
         <option value="$PROJECT_DIR$/db/rds/db.go" />
+        <option value="$PROJECT_DIR$/app/main.go" />
+        <option value="$PROJECT_DIR$/db/psql/db.go" />
+        <option value="$PROJECT_DIR$/redeploy.sh" />
+        <option value="$PROJECT_DIR$/serverHTTP/new.go" />
+        <option value="$PROJECT_DIR$/app/api/v1/v1.go" />
+        <option value="$PROJECT_DIR$/app/api/api.go" />
+        <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/adm/main.go" />
       </list>
     </option>
   </component>
@@ -264,6 +257,11 @@
             <path>
               <item name="music_room" type="b2602c69:ProjectViewProjectNode" />
               <item name="music_room" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="music_room" type="b2602c69:ProjectViewProjectNode" />
+              <item name="music_room" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="music_room" type="b2602c69:ProjectViewProjectNode" />
@@ -327,7 +325,7 @@
         <env name="PGNAME" value="music_room" />
         <env name="PGUSER" value="alex" />
         <env name="PGPASS" value="12345" />
-        <env name="MIGRATE" value="1" />
+        <env name="MIGRATE" value="0" />
         <env name="RDSHOST" value="127.0.0.1" />
         <env name="RDSPORT" value="6379" />
         <env name="RDSNAME" value="1" />
@@ -355,10 +353,10 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3394794" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3394794" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.27657267" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49920255" visible="true" weight="0.19092418" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.27657267" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49920255" visible="true" weight="0.19092418" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" visible="true" weight="0.22910902" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286334" />
@@ -409,27 +407,11 @@
           <url>file://$PROJECT_DIR$/config/config.go</url>
           <line>66</line>
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/serverHTTP/new.go</url>
-          <line>21</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/psql/db.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="50" column="31" lean-forward="true" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
-          <folding>
-            <element signature="e#14#158#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/serverHTTP/new.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -607,13 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/api/v2/v2.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -653,26 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/api/v1/v1.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="e#12#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/api/api.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
-          <folding>
-            <element signature="e#13#114#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/sqlite.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -691,16 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/github.com/qor/admin/admin.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="e#15#195#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -732,26 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serverHTTP/new.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding>
-            <element signature="e#20#223#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#14#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -759,59 +684,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redeploy.sh">
+    <entry file="file://$PROJECT_DIR$/Gopkg.toml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/rds/db.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        <state relative-caret-position="45">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="e#13#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adm/main.go">
+    <entry file="file://$PROJECT_DIR$/Gopkg.lock">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
-          <folding>
-            <element signature="e#20#144#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/github.com/qor/admin/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/psql/db.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+        <state relative-caret-position="195">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="26" />
           <folding>
             <element signature="e#14#158#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gopkg.toml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gopkg.lock">
+    <entry file="file://$PROJECT_DIR$/redeploy.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        <state relative-caret-position="435">
+          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/github.com/qor/admin/admin.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
+          <folding>
+            <element signature="e#15#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api/v2/v2.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api/v1/v1.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#12#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="140">
+          <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
           <folding>
-            <element signature="e#21#135#0" expanded="true" />
+            <element signature="e#14#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/rds/db.go">
+    <entry file="file://$PROJECT_DIR$/app/api/api.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
-            <element signature="e#13#40#0" expanded="true" />
+            <element signature="e#13#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serverHTTP/new.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="e#20#223#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adm/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="e#20#144#0" expanded="true" />
           </folding>
         </state>
       </provider>

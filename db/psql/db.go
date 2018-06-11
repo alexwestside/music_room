@@ -32,12 +32,18 @@ func makeMigrations(connection *gorm.DB) {
 func (p *TypePSQL) NewConn() *gorm.DB  {
 	connStr := fmt.Sprintf("sslmode=disable host=%s port=%s dbname=%s user=%s password=%s",
 				p.PGhost, p.PGport, p.PGname, p.PGuser, p.PGpass)
+
 	connection, err := gorm.Open("postgres", connStr)
 	if err != nil {
 		panic(err)
 	}
 
-	makeMigrations(connection)
+	err = connection.DB().Ping()
+	if err != nil {
+		panic(err)
+	}
+
+	//makeMigrations(connection)
 
 	return connection
 }
@@ -52,24 +58,3 @@ func New() *TypePSQL {
 		os.Getenv("PGPASS"),
 	}
 }
-
-//
-//func New() *gorm.DB {
-//	host := os.Getenv("PGHOST")
-//	port := os.Getenv("PGPORT")
-//	pgname := os.Getenv("PGNAME")
-//	user := os.Getenv("PGUSER")
-//	pass := os.Getenv("PGPASS")
-//
-//	connStr := fmt.Sprintf("sslmode=disable host=%s port=%s dbname=%s user=%s password=%s",
-//		host, port, pgname, user, pass)
-//
-//	connection, err := gorm.Open("postgres", connStr)
-//	if err != nil {
-//		panic(err)
-//	}
-//
-//	makeMigrations(connection)
-//
-//	return connection
-//}
